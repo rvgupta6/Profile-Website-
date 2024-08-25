@@ -1,0 +1,119 @@
+
+
+#wrapper {
+
+    display: grid;
+
+    grid-template-areas: "header header header"
+
+                         "nestedgrid nestedgrid nestedgrid "
+
+                         "images images images"
+
+                         "nestedgrid2 nestedgrid2 nestedgrid2"
+
+                         "nestedgrid2 nestedgrid2 nestedgrid2"
+
+                         "footer footer footer";
+
+ 
+
+}
+
+ 
+
+#header {
+
+    grid-area: header;
+
+    text-align: center;
+
+    background-color: aquamarine;
+
+}
+
+ 
+
+#nestedgrid {
+
+    grid-area: nestedgrid;
+
+    display: grid;
+
+    grid-template-areas: "ad1 ad2 ad3 ad4";  
+    
+   
+
+    padding: 10px 10px;
+    
+    text-align: center;
+
+    background-color: lightblue;
+
+}
+
+
+
+#images {
+
+    grid-area: images;
+    
+  
+    
+    padding: 10px 10px; color: black;
+    
+    image align-items: flex-start;
+    
+    text-align: start;
+    
+     font-size: 50px;
+    
+    font-display: fallback;
+    
+    background-color: palegoldenrod;
+
+}
+
+ 
+
+#nestedgrid2 {
+
+    grid-area: nestedgrid2;
+
+    display: grid;
+    
+
+    grid-template-areas: "ad5 ad6 ad7"
+
+                         "ad8 ad9 ad10"; 
+    
+     padding: 10px 10px; color: black;
+    
+        
+    background-color: peachpuff;
+
+}
+
+
+
+ 
+
+#footer {
+
+    grid-area: footer;
+    
+    background-color: sandybrown;
+    
+    font-family:fantasy;
+    
+    text-align: center;
+
+}
+
+ 
+
+div{
+
+    border: 1px solid black;
+
+}
